@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const Navbar = () => {
+// --- 1. ACCEPT 'onContactClick' PROP ---
+const Navbar = ({ onGetQuoteClick, onContactClick }) => {
     const [isActive, setIsActive] = useState(false);
 
     const toggleMenu = () => {
@@ -17,13 +18,13 @@ const Navbar = () => {
         setIsActive(false); // Close menu on link click
     };
 
-    // Updated navLinks array with the new PDF link
+    // --- 2. REMOVE 'Contact' FROM THIS ARRAY ---
     const navLinks = [
         { href: '#home', label: 'Home' },
         { href: '#about', label: 'About' },
         { href: '#services', label: 'Services' },
-        { href: '/my-document.pdf', label: 'View PDF' }, // Example PDF link
-        { href: '#contact', label: 'Contact' },
+        { href: '/my-document.pdf', label: 'View PDF' },
+        // { href: '#contact', label: 'Contact' }, <-- REMOVED FROM HERE
     ];
 
     return (
@@ -45,11 +46,8 @@ const Navbar = () => {
                                 <a
                                     href={link.href}
                                     className="nav-link"
-                                    // Only use the custom click handler for internal links
                                     onClick={isInternalLink ? (e) => handleLinkClick(e, link.href) : null}
-                                    // Open external links (like our PDF) in a new tab for better UX
                                     target={isInternalLink ? '_self' : '_blank'}
-                                    // Important for security when using target="_blank"
                                     rel={isInternalLink ? null : 'noopener noreferrer'}
                                 >
                                     {link.label}
@@ -57,8 +55,29 @@ const Navbar = () => {
                             </li>
                         );
                     })}
+                    
+                    {/* --- 3. ADD 'Contact' LINK MANUALLY WITH NEW ONCLICK --- */}
+                    <li>
+                        <a 
+                          href="#" 
+                          className="nav-link" 
+                          onClick={(e) => {
+                            e.preventDefault(); // Stop link from jumping
+                            onContactClick();     // Call the function from App.js
+                            setIsActive(false);   // Close mobile menu if open
+                          }}
+                        >
+                            Contact
+                        </a>
+                    </li>
                 </ul>
-                <button className="cta-button">Get A Quote</button>
+                <button 
+                  className="cta-button" 
+                  onClick={onGetQuoteClick} 
+                  type="button"
+                >
+                  Get A Quote
+                </button>
                 <div className={isActive ? 'hamburger active' : 'hamburger'} onClick={toggleMenu}>
                     <span></span>
                     <span></span>

@@ -6,28 +6,18 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="hero-content">
                     <div className="hero-text">
-                        <span className="hero-subtitle">NATURAL ENVIRONMENT</span>
-                        <h1 className="hero-title">Be Safe Controls Environment</h1>
+                        <span className="hero-subtitle">BEYOND COMMERCE. A COMMUNITY.</span>
+                        <h1 className="hero-title">Crafted by Hand. Shared with Heart.</h1>
                         <p className="hero-description">
-                            Professionally optimize interdependent intellectual capital
-                            without excellent best practices. Progressively fabricate
-                            client-centric innovation.
+                            A marketplace where every product tells a story. We connect you with talented bamboo artisans, empowering their communities with every sale
                         </p>
                         <div className="hero-buttons">
-                            <button className="btn-primary">Let's Go</button>
+                            <button className="btn-primary">Discover Their Stories</button>
                             <button className="btn-secondary">Read More</button>
                         </div>
                     </div>
                 </div>
-                <div className="hero-ticker">
-                    <div className="ticker-content">
-                        <span>Ocean-Recycling</span>
-                        <span>Environmental</span>
-                        <span>Renewable-Energy</span>
-                        <span>Ocean-Recycling</span>
-                        <span>Environmental</span>
-                    </div>
-                </div>
+               
             </div>
         </section>
     );
