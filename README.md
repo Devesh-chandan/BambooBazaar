@@ -4,8 +4,7 @@
 **Crafted by Hand. Shared with Heart.** <br>
 BambooBazaar is a marketplace where every product tells a story. We connect you with talented bamboo artisans, empowering their communities with every sale. Our mission is to create a sustainable "Forever Green Future" by providing economic benefits and promoting a safe environment through alternative innovation and ethical networks.
 
-## 🌐 Contact & Location:
-[![Phone](https://img.shields.io/badge/Phone-%2B91%2072769%2064566-green?logo=whatsapp&logoColor=white)](tel:+917276964566) [![Location](https://img.shields.io/badge/Location-Pune%2C%20India-red?logo=google-maps&logoColor=white)](https://maps.google.com/?q=18.31635,73.84421) 
+
 
 # 💻 Tech Stack:
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
